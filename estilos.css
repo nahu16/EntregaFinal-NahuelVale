@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Protest+Riot&display=swap");
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Protest Riot', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aca empieza el index */
+header {
+  background-image: linear-gradient(rgb(235, 167, 156), rgb(223, 189, 179), rgb(249, 220, 206), rgb(255, 255, 255));
+  height: 100px;
+  width: 100%;
+  color: white;
+}
+
+.logo {
+  float: left;
+  font-size: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px 5px black;
+}
+
+.navbar {
+  color: white !important;
+  background-color: transparent !important;
+  text-shadow: 2px 2px 5px black;
+  font-size: 25px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.titulo h2 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+.titulo h2:hover {
+  animation-name: efecto;
+  animation-duration: 5s;
+  animation-iteration-count: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes efecto {
+  0% {
+    font-size: 100px;
+  }
+  50% {
+    font-size: 200px;
+  }
+  100% {
+    font-size: 100px;
+  }
+}
+main {
+  background-image: url(imag/istockphoto-1291486920-612x612.jpg);
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  background-color: rgb(249, 220, 206);
+  color: black;
+  font-size: 20px;
+}
+
+footerfooter .redes i {
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: black;
+}
+
+/* aca termina el index */
+@media only screen and (max-width: 480px) {
+  .titulo h2 {
+    font-size: 30px;
+    text-shadow: 10px 10px 10px 10px black;
+  }
+  .titulo h2:hover {
+    animation-name: efectos;
+    animation-iteration-count: infinite;
+  }
+  @keyframes efectos {
+    0% {
+      font-size: 30px;
+    }
+    50% {
+      font-size: 40px;
+    }
+    100% {
+      font-size: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .titulo h2 {
+    font-size: 50px;
+    text-shadow: 10px 10px 10px 10px black;
+  }
+  .titulo h2:hover {
+    animation-name: efectos;
+    animation-iteration-count: infinite;
+  }
+  @keyframes efectos {
+    0% {
+      font-size: 50px;
+    }
+    50% {
+      font-size: 60px;
+    }
+    100% {
+      font-size: 50px;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+  .titulo h2 {
+    font-size: 80px;
+    text-shadow: 10px 10px 10px 10px black;
+  }
+  .titulo h2:hover {
+    animation-name: efectos;
+    animation-iteration-count: infinite;
+  }
+  @keyframes efectos {
+    0% {
+      font-size: 70px;
+    }
+    50% {
+      font-size: 90px;
+    }
+    100% {
+      font-size: 70px;
+    }
+  }
+}
+/* aca termina el index */
+/* aca empieza Nosotros */
+.card {
+  width: 40%;
+  background-color: rgba(255, 127, 80, 0.6);
+  border: 5px solid 249, 220, 206;
+  border-radius: 20px;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+  object-fit: cover;
+}
+
+.card_desc {
+  font-size: 20px;
+}
+
+.card_img {
+  height: 250px;
+  border-radius: 20px;
+  background-color: transparent;
+  background-image: url(imag/Armando2.jpeg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card_img2 {
+  height: 215px;
+  border-radius: 20px;
+  background-color: transparent;
+  background-image: url(imag/Armado.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.card_title {
+  color: white;
+  text-transform: capitalize;
+  font-size: 25px;
+  text-align: center;
+}
+
+h4 {
+  color: rgb(52, 56, 121);
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.tutorial {
+  padding-inline: 5%;
+  padding-top: 3%;
+}
+
+.video {
+  height: 400px;
+  width: 600px;
+}
+
+@media only screen and (max-width: 640px) {
+  .video {
+    height: 300px;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 530px) {
+  .video {
+    height: 200px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .video {
+    height: 200px;
+    width: 250px;
+  }
+}
+/* aca termina nosotros */
+/* aca empieza productos */
+.formas {
+  background-color: rgba(255, 127, 80, 0.4);
+  border: solid rgba(255, 127, 80, 0.8) 2px;
+  font-size: 20px;
+}
+
+.carrusel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.carrusel img {
+  height: 350px;
+}
+
+@media only screen and (max-width: 640px) {
+  .carrusel img {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  .carrusel img {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carrusel img {
+    height: 200px;
+  }
+}
+.img-fluid {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 140px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.incpin {
+  padding-top: 30px;
+}
+
+.infoacordion {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5px;
+}
+
+.accordion-header, .accordion-button {
+  background-color: rgba(255, 127, 80, 0.123) !important;
+  text-transform: capitalize;
+}
+
+.accordion-item {
+  background-color: rgba(255, 127, 80, 0.3);
+  border: 5px solid 249, 220, 206;
+}
+
+/* aca termina productos */
+/* aca empieza ubicacion */
+.contenedor {
+  display: inline-flex;
+}
+
+.contactos {
+  margin-left: 20px;
+}
+
+.ubic {
+  color: black;
+}
+
+.cont {
+  padding-top: 10%;
+}
+
+.contac {
+  margin-top: 90px;
+}
+
+.redes p {
+  color: black;
+}
+
+.redes li a {
+  color: black;
+  list-style-type: none;
+  font-size: 20px;
+  margin-top: 20%;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+.mensaje {
+  padding-left: 10%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .contenedor {
+    display: block;
+    margin-left: 20px;
+  }
+  .cont {
+    padding-top: 5px;
+  }
+  .mensaje {
+    padding-left: 20px;
+  }
+  .contac {
+    margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .contenedor {
+    display: block;
+    margin-left: 20px;
+  }
+  .cont {
+    padding-top: 5px;
+  }
+  .mensaje {
+    padding-left: 20px;
+  }
+  .contac {
+    margin-top: 5%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
