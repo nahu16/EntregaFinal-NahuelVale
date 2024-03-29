@@ -287,8 +287,9 @@ h4 {
 
 /* aca termina productos */
 /* aca empieza ubicacion */
-.contenedor {
-  display: inline-flex;
+.mapa {
+  height: 450px;
+  width: 900px;
 }
 
 .contactos {
@@ -300,11 +301,7 @@ h4 {
 }
 
 .cont {
-  padding-top: 10%;
-}
-
-.contac {
-  margin-top: 90px;
+  padding-top: 10px;
 }
 
 .redes p {
@@ -326,37 +323,47 @@ h2 {
 }
 
 .mensaje {
-  padding-left: 10%;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 1280px) {
   .contenedor {
     display: block;
-    margin-left: 20px;
   }
   .cont {
     padding-top: 5px;
-  }
-  .mensaje {
-    padding-left: 20px;
   }
   .contac {
     margin-top: 5%;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 960px) {
+  .mapa {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mapa {
+    width: 500px;
+  }
   .contenedor {
     display: block;
-    margin-left: 20px;
   }
   .cont {
     padding-top: 5px;
   }
-  .mensaje {
-    padding-left: 20px;
-  }
   .contac {
     margin-top: 5%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .mapa {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mapa {
+    width: 290px;
   }
 }
 
