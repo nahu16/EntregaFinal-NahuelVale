@@ -26,14 +26,12 @@ header {
 }
 
 .navbar {
-    color: white !important;
     background-color: transparent !important;
     text-shadow: 2px 2px 5px black;
     font-size: 25px;
     margin-top: 20px;
     z-index: 1;
 }
-
 
 .titulo h2 {
     font-size: 100px;
@@ -73,19 +71,32 @@ main{
 
 footer {
     width: 100%;
-    bottom: 0px ;
+    height: 80px;
+    margin-top: auto ;
     text-align: center;
     background-color: rgb(249, 220, 206);
     color: black;
     font-size: 20px;
 }
-footerfooter .redes i {
+footer .redes i {
     font-size: 30px;
     letter-spacing: 10px;
     color: black;
 }
 
-/* aca termina el index */
+
+@media only screen and (max-width: 999px) {
+    .collapse{
+        background-color: rgba(255, 127, 80, 0.6) !important; 
+        border-radius: 20PX;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar{
+        font-size: 20px;
+    }
+}
 
 @media only screen and (max-width: 480px){
     .titulo h2 {
@@ -164,14 +175,17 @@ footerfooter .redes i {
 
 /* aca termina el index */
 /* aca empieza Nosotros */
-
+.card-container{
+    display: flex;
+}
 .card{
+    position: relative;
     width: 40%;
     background-color: rgba(255, 127, 80, 0.6);
     border: 5px solid (249, 220, 206);
     border-radius: 20px;
     margin-left: 5%;  
-    display: inline-block;                                                                                                      
+    display: inline-block;                                                                                                       
 }
 .card:hover {
     transform: scale(1.1);
@@ -183,7 +197,7 @@ footerfooter .redes i {
     font-size: 20px;
 }
 .card_img{
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
     background-color: transparent;
     background-image: url(imag/Armando2.jpeg);
@@ -193,7 +207,7 @@ footerfooter .redes i {
 }
 
 .card_img2{
-    height: 250px;
+    height: 200px;
     border-radius: 20px;
     background-color: transparent;
     background-image: url(imag/Armado.jpg);
@@ -226,6 +240,12 @@ h4 {
 }
 
 @media only screen and (max-width: 640px){
+    .card_desc{
+        font-size: 18px;
+    }
+    .tutorial{
+        padding-top: 9%;
+    }
     .video {
         height: 300px;
         width: 500px;
@@ -240,6 +260,9 @@ h4 {
 }
 
 @media only screen and (max-width: 420px){
+    .tutorial{
+        padding-top: 14%;
+    }
     .video {
         height: 200px;
         width: 250px;
