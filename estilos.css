@@ -223,6 +223,11 @@ h4 {
 }
 
 @media only screen and (max-width: 640px) {
+  .card:hover {
+    transform: scale(1.08);
+    transition: all 2s;
+    object-fit: cover;
+  }
   .card_desc {
     font-size: 18px;
   }
@@ -235,12 +240,22 @@ h4 {
   }
 }
 @media only screen and (min-width: 420px) and (max-width: 530px) {
+  .card:hover {
+    transform: scale(1.06);
+    transition: all 2s;
+    object-fit: cover;
+  }
   .video {
     height: 200px;
     width: 350px;
   }
 }
 @media only screen and (max-width: 420px) {
+  .card:hover {
+    transform: scale(1.04);
+    transition: all 2s;
+    object-fit: cover;
+  }
   .tutorial {
     padding-top: 14%;
   }
